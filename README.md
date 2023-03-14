@@ -143,6 +143,15 @@ python plot_trajectory.py --dataset cifar10 --model your_network --model_folder 
 ```
 **Please notice the change in the number of epochs to 100.**
 
+
+*UPDATED on 14/03/2023*:
+
+As mentioned above, follow the instructions under the repository's Plotting the network trajectory section to generate plots for various sets of hyper-parameters.Train each model for at most 100 epochs.
+1. Compare how quickly your models converge. Feel free to modify the plot_trajectory.py file to include the loss value at each point of the plot.
+2. What can you say about the region where the models converged to? 
+Remeber that `plot_trajectory.py` uses PCA to plot training trajectories individually. How would you modify the code to allow two training trajectories (for the same model architecture) to be directly comparable?
+3. Can flatness be related with generalization? How would you test for that?
+
 ## Reference
 
 [1] Ian J Goodfellow, Oriol Vinyals, and Andrew M Saxe. Qualitatively characterizing neural network optimization problems. ICLR, 2015.
